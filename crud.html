@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CRUD de Roupas</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Carros</h1>
+
+        <form id="carForm">
+            <input type="hidden" id="carId">
+
+            <label for="marca">Marca:</label>
+            <input type="text" id="marca" required>
+
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo" required>
+
+            <label for="ano">Ano:</label>
+            <input type="text" id="ano" require>
+
+            <button type="submit" onclick="saveCar()">Salvar</button>
+        </form>
+         <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Ano</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="carTableBody"></tbody>
+        </table>
+     </div>
+     <script src="crud.js"></script>
+</body>
+</html>
